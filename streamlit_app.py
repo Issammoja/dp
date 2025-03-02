@@ -18,6 +18,9 @@ with st.expander('Data'):
   st.write('**y**')
   y_raw = df.Year
   y_raw
-  
+
+with st.expander(Data visualization)
+
+  st.scatter_chart(data=df, x 
   
   
