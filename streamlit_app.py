@@ -10,5 +10,8 @@ with st.expander('Data'):
   st.write('**Raw data**')
   df= pd.read_csv('https://raw.githubusercontent.com/Issammoja/dp/refs/heads/master/kenya-climate-data-1991-2016-rainfallmm.csv')
   df
-  st.write('**X**')
-  x = df.drop('
+  st.write('**x**')
+  x = df.drop('year', axis=1)
+  x
+  st.write('**y**')
+  y = df.drop('rainfall', axis=1)
