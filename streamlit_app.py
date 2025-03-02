@@ -11,8 +11,8 @@ with st.expander('Data'):
   df= pd.read_csv('https://raw.githubusercontent.com/Issammoja/dp/refs/heads/master/kenya-climate-data-1991-2016-rainfallmm.csv')
   df
   st.write(**X**)
+  st.write(df.columns)
   X = df.drop('Year', axis = 1)
-  st.write("Columns in the DataFrame:", df.columns.tolist())
   X
   
   
