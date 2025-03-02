@@ -16,7 +16,7 @@ with st.expander('Data'):
   X_raw
 
   st.write('**y**')
-  y_raw = df.drop('Rainfall-(MM)')
+  y_raw = df.Rainfall-(MM)
   y_raw
   
   
