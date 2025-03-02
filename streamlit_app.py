@@ -12,6 +12,7 @@ with st.expander('Data'):
   df
   st.write(**X**)
   X = df.drop('Year', axis = 1)
+  st.write("Columns in the DataFrame:", df.columns.tolist())
   X
   
   
