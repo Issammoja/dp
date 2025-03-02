@@ -19,7 +19,7 @@ with st.expander('Data'):
   y_raw = df.Year
   y_raw
 
-  with st.expander('Data Visualization'):
+with st.expander('Data Visualization'):
 
 
 
