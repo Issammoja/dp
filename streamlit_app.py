@@ -14,4 +14,4 @@ with st.expander('Data'):
   x = df.drop('year', axis=1)
   x
   st.write('**y**')
-  y = df.drop('rainfall', axis=1)
+  y = df.drop('rainfall')
