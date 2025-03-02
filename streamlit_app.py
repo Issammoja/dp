@@ -19,7 +19,7 @@ with st.expander('Data'):
   y_raw = df.Year
   y_raw
 
-with st.expander(Data visualization)
+with st.expander(Data visualization):
 
 #Year,Month Average,Rainfall - (MM)
   st.scatter_chart(data=df, x = 'Year', y = 'Rainfall -(MM)')
