@@ -20,8 +20,7 @@ with st.expander('Data'):
   y_raw
 
 with st.expander('Data visualization'):
-  st.scatter_chart(data=df, x='Year', y='Rainfall_mm', color='Year')
-
+  st.scatter_chart(data=df, x='Year', y='Rainfall_MM')
 
 
   
