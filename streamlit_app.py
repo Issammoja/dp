@@ -22,7 +22,7 @@ with st.expander('Data'):
 
 with st.expander('Data visualization'):
 
-  st.scatter_chart(data=df, x='Year', y='Rainfall - (MM)')
+  st.st.bar_chart(data=df, x='Year', y='Rainfall - (MM)')
 
 
   
