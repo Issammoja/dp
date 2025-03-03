@@ -25,14 +25,19 @@ with st.expander('Data visualization'):
   st.bar_chart(data=df, x='Year', y='Rainfall - (MM)')
 
 
+# Verify the column names
+print(data.columns)  # This will print the column names to help debug
+
 # Calculate dynamic values for sliders
 rainfall_min = data['Rainfall - (MM)'].min()
 rainfall_max = data['Rainfall - (MM)'].max()
 rainfall_default = data['Rainfall - (MM)'].median()
 
-total_rainfall_min = data.groupby('Year')['Rainfall - (MM)'].sum().min()
-total_rainfall_max = data.groupby('Year')['Rainfall - (MM)'].sum().max()
-total_rainfall_default = data.groupby('Year')['Rainfall - (MM)'].sum().median()
+# Group by Year and calculate total annual rainfall
+total_rainfall_by_year = data.groupby('Year')['Rainfall - (MM)'].sum()
+total_rainfall_min = total_rainfall_by_year.min()
+total_rainfall_max = total_rainfall_by_year.max()
+total_rainfall_default = total_rainfall_by_year.median()
 
 # Initialize session state to store input features
 if 'input_features' not in st.session_state:
