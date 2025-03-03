@@ -21,9 +21,8 @@ with st.expander('Data'):
   y_raw
 
 with st.expander('Data visualization'):
-  df = df.rename(columns=lambda x: x.strip().replace(" ", "_").replace("-", "").replace("(", "").replace(")", ""))
 
-  st.scatter_chart(data=df, x='Year', y='Rainfall_MM')
+  st.scatter_chart(data=df, x='Year', y='Rainfall - (MM)')
 
 
   
