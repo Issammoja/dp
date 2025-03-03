@@ -26,7 +26,8 @@ with st.expander('Data visualization'):
 
 # Data Preparation
 with st.sidebar:
-  st.header('input feautures')
+  st.header('Input Feautures')
+  #
 
 
   
