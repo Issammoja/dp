@@ -27,8 +27,10 @@ with st.expander('Data visualization'):
 # Data Preparation
 with st.sidebar:
   st.header('Input Feautures')
-  # 'Year,Month Average,Rainfall - (MM)'
-year= st.selectbox('Year')
+ 
+# Select Month
+month_options = df["Month_Average"].unique().tolist()
+selected_month = st.sidebar.selectbox("Select Month", month_options)
 
 
 
