@@ -24,6 +24,10 @@ with st.expander('Data visualization'):
 
   st.bar_chart(data=df, x='Year', y='Rainfall - (MM)')
 
+# Data Preparation
+with st.sidebar:
+  st.header('input feautures')
+
 
   
   
