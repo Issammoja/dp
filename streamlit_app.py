@@ -27,8 +27,8 @@ with st.expander('Data visualization'):
 # Data Preparation
 with st.sidebar:
   st.header('Input Feautures')
-  # Drought,'Year,Month Average,Rainfall - (MM)'
-Drought= st.selectbox('Drought')
+  # 'Year,Month Average,Rainfall - (MM)'
+year= st.selectbox('Year')
 
 
 
